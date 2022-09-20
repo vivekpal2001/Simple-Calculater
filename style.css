@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+.calculator{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+}
+.display{
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 40px;
+    width: 273.283px;
+    float: right;
+    background: #2196F3;
+    border: 2px solid black;
+}
+.calculator_key{
+    border: 2px solid black;
+    display: grid;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    grid-template-areas: 'operator operator operator operator'
+                            'seven eight nine key-equal'
+                            'six five four  key-equal'
+                            'one two three  key-equal'
+                            'zero decimals ac key-equal';
+}
+.key-equal{
+    grid-area: key-equal;
+    background-color: orange;
+    border: none;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area:four ;
+}
+.five{
+    grid-area:five ;
+}
+.six{
+    grid-area:six ;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area:nine ;
+}
+.zero{
+    grid-area: zero;
+}
+.key_operator{
+    grid-area: operator;
+}
+.decimal{
+    grid-area: decimals;
+}
+.ac{
+    grid-area: ac;
+}
+.is-depressed{
+    background-color: rgb(179, 175, 175);
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+}
+.dividesize{
+    width: 49.28px;
+}
